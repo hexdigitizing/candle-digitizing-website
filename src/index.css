@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Jost', 'Outfit', system-ui, -apple-system, sans-serif;
+    color: #1F2244;
+    background-color: #FAF9F5;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Kiddino Signature vs-btn button style */
+.vs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.vs-btn:hover {
+  transform: translateY(-2px);
+}
+
+.vs-btn-yellow {
+  background-color: #FEA800;
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px -5px rgba(254, 168, 0, 0.4);
+}
+.vs-btn-yellow:hover {
+  background-color: #E89800;
+  box-shadow: 0 14px 28px -5px rgba(254, 168, 0, 0.5);
+}
+
+.vs-btn-coral {
+  background-color: #FF3F53;
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px -5px rgba(255, 63, 83, 0.4);
+}
+.vs-btn-coral:hover {
+  background-color: #E62A3E;
+  box-shadow: 0 14px 28px -5px rgba(255, 63, 83, 0.5);
+}
+
+.vs-btn-blue {
+  background-color: #1679E2;
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px -5px rgba(22, 121, 226, 0.4);
+}
+.vs-btn-blue:hover {
+  background-color: #0E65C4;
+  box-shadow: 0 14px 28px -5px rgba(22, 121, 226, 0.5);
+}
+
+.vs-btn-green {
+  background-color: #3BB77E;
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px -5px rgba(59, 183, 126, 0.4);
+}
+.vs-btn-green:hover {
+  background-color: #2FA36E;
+  box-shadow: 0 14px 28px -5px rgba(59, 183, 126, 0.5);
+}
+
+/* Custom smooth transitions and animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out 2s infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 4.5s ease-in-out 1s infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Custom stitch texture pattern */
+.bg-stitch-pattern {
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Scalloped edge decorative classes */
+.mask-scallop {
+  mask-image: radial-gradient(circle at 10px 10px, black 10px, transparent 10px);
+}

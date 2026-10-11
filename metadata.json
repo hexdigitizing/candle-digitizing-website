@@ -1,0 +1,8 @@
+{
+  "name": "Candle Digitizing",
+  "description": "Candle Digitizing – professional commercial embroidery digitizing and vector art conversion services with fast turnaround, tested sew-outs, and production-ready machine formats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
